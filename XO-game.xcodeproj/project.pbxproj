@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A8DD31625EBBC6E00E71363 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DD31525EBBC6E00E71363 /* StartScreenViewController.swift */; };
+		0A8DD31B25EBC56700E71363 /* ComputerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DD31A25EBC56700E71363 /* ComputerState.swift */; };
 		29B9F0AC25EA2A17006C4FA4 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B9F0AB25EA2A17006C4FA4 /* GameState.swift */; };
 		29B9F0B025EA2A90006C4FA4 /* PlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B9F0AF25EA2A90006C4FA4 /* PlayerState.swift */; };
 		29B9F0B325EA2D71006C4FA4 /* GameOverState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B9F0B225EA2D71006C4FA4 /* GameOverState.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A8DD31525EBBC6E00E71363 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		0A8DD31A25EBC56700E71363 /* ComputerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerState.swift; sourceTree = "<group>"; };
 		29B9F0AB25EA2A17006C4FA4 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		29B9F0AF25EA2A90006C4FA4 /* PlayerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerState.swift; sourceTree = "<group>"; };
 		29B9F0B225EA2D71006C4FA4 /* GameOverState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverState.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 				29B9F0AB25EA2A17006C4FA4 /* GameState.swift */,
 				29B9F0AF25EA2A90006C4FA4 /* PlayerState.swift */,
 				29B9F0B225EA2D71006C4FA4 /* GameOverState.swift */,
+				0A8DD31A25EBC56700E71363 /* ComputerState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 				29B9F0AA25EA2A0A006C4FA4 /* State */,
 				F874E4702224621100364CAE /* AppDelegate.swift */,
 				F874E4722224621100364CAE /* GameViewController.swift */,
+				0A8DD31525EBBC6E00E71363 /* StartScreenViewController.swift */,
 				F874E4F02225DFF700364CAE /* Referee.swift */,
 				F874E4E62225CB3F00364CAE /* Models */,
 				F874E4E52225CB3100364CAE /* Views */,
@@ -237,9 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8DD31625EBBC6E00E71363 /* StartScreenViewController.swift in Sources */,
 				F874E4732224621100364CAE /* GameViewController.swift in Sources */,
 				29B9F0C525EA3C96006C4FA4 /* LogInvoker.swift in Sources */,
 				F874E4DD2225C25D00364CAE /* GameboardPosition.swift in Sources */,
+				0A8DD31B25EBC56700E71363 /* ComputerState.swift in Sources */,
 				F874E4DF2225C76000364CAE /* MarkView.swift in Sources */,
 				F874E4F12225DFF700364CAE /* Referee.swift in Sources */,
 				F874E4F52225E2CD00364CAE /* Gameboard.swift in Sources */,
@@ -405,11 +413,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6G4AKDTMLW;
 				INFOPLIST_FILE = "XO-game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "plasmon.XO-game";
+				PRODUCT_BUNDLE_IDENTIFIER = "davdima.XO-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,11 +432,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6G4AKDTMLW;
 				INFOPLIST_FILE = "XO-game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "plasmon.XO-game";
+				PRODUCT_BUNDLE_IDENTIFIER = "davdima.XO-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
