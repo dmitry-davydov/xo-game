@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eKx-7Q-YTZ">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -114,12 +113,22 @@
                                     <action selector="startGameWithHuman:" destination="eKx-7Q-YTZ" eventType="touchUpInside" id="Vgq-0Y-y8C"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TO3-oW-dME">
+                                <rect key="frame" x="160" y="394.5" width="55" height="30"/>
+                                <state key="normal" title="5 ходов"/>
+                                <connections>
+                                    <action selector="startGameWith5move:" destination="eKx-7Q-YTZ" eventType="touchUpInside" id="yhG-Zg-3RC"/>
+                                    <action selector="startGameWithHuman:" destination="eKx-7Q-YTZ" eventType="touchUpInside" id="Kn2-id-fNK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LTb-CA-Gkd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3lT-dj-WEj" firstAttribute="top" secondItem="tnH-uX-wxw" secondAttribute="bottom" constant="8" id="INk-Bf-Zan"/>
                             <constraint firstItem="tnH-uX-wxw" firstAttribute="centerX" secondItem="LqU-lD-X2A" secondAttribute="centerX" id="LTS-6z-B8z"/>
+                            <constraint firstItem="TO3-oW-dME" firstAttribute="top" secondItem="3lT-dj-WEj" secondAttribute="bottom" constant="8" id="RoR-bd-O7n"/>
+                            <constraint firstItem="TO3-oW-dME" firstAttribute="centerX" secondItem="LqU-lD-X2A" secondAttribute="centerX" id="hch-sW-o1i"/>
                             <constraint firstItem="tnH-uX-wxw" firstAttribute="centerY" secondItem="LqU-lD-X2A" secondAttribute="centerY" id="knM-2i-Vhm"/>
                             <constraint firstItem="3lT-dj-WEj" firstAttribute="centerX" secondItem="LqU-lD-X2A" secondAttribute="centerX" id="wgB-Rr-jbs"/>
                         </constraints>

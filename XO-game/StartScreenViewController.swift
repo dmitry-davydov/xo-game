@@ -13,17 +13,19 @@ class StartScreenViewController: UIViewController {
     //MARK: - IBActions
     
     @IBAction func startGameWithHuman(_ sender: UIButton) {
-        startGame(withHuman: true)
+        startGame(level: .withHuman)
     }
     @IBAction func startGameWithComputer(_ sender: UIButton) {
-        startGame(withHuman: false)
+        startGame(level: .withCPU)
     }
-    
-    private func startGame(withHuman: Bool) {
+    @IBAction func startGameWith5move(_ sender: UIButton) {
+        startGame(level: .fiveMove)
+    }
+    private func startGame(level: GameLevel) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         guard let vc = storyBoard.instantiateViewController(identifier: "GameViewController") as? GameViewController else { return }
         
-        vc.playingWithHuman = withHuman
+        vc.level = level
         
         show(vc, sender: self)
     }
